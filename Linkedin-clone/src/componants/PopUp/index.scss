@@ -1,0 +1,46 @@
+.popup-card {
+    border: 1px solid #a8a8a8;
+    width: 250px;
+    height: auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    right: 50px;
+    top: 72px;
+   
+    .headline{
+      font-size: 12px;
+      font-weight: 500;
+      color: #666666;
+      margin-top: -15px;
+      margin-left: 50px;
+      font-family: system-ui;
+      
+    }
+   
+.img-profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+  }
+
+  .name{
+    font-size: 16px;
+    color:  #0073b1 ;
+    font-weight:600;
+    margin-top: -50px;
+    margin-left: 50px;
+    font-family: system-ui;
+    cursor: pointer;
+  }

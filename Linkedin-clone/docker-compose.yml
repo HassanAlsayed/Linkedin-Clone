@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  linkedinclone:
+    build: .
+    container_name: linkedin.container
+    ports: 
+      - '5173:5173'
+    stdin_open: true
+    tty: true
+    environment:
+      - VITE_FIREBASE_API_KEY=AIzaSyCYXq5LqYO6IwWv_QOVo_Hs0dUegY24B_Y
+      - VITE_FIREBASE_AUTH_DOMAIN=linkedin-clone-924ae.firebaseapp.com
+      - VITE_FIREBASE_PROJECT_ID=linkedin-clone-924ae
+      - VITE_FIREBASE_STORAGE_BUCKET=linkedin-clone-924ae.appspot.com
+      - VITE_FIREBASE_MESSAGING_SENDER_ID=562114395439
+      - VITE_FIREBASE_APP_ID=1:562114395439:web:917726a8ee4314742bb5da

@@ -1,0 +1,46 @@
+name: React CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.11.1"
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./Linkedin-clone
+
+      - name: Build project
+        run: npm run dev
+        working-directory: ./Linkedin-clone
+
+      - name: Archive build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: ./build
+          working-directory: ./Linkedin-clone
+
+      - name: Deploy to Local Server
+        run: |
+          # Start a simple HTTP server to serve the build
+          npx serve -s build &
+          APP_PID=$!
+          sleep 60
+          kill $APP_PID
+        if: success()

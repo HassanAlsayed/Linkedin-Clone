@@ -1,0 +1,89 @@
+
+.modal-input {
+  border: none !important;
+  font-size: 16px;
+  font-family: system-ui;
+  width: 100%;
+  resize: none;
+  margin-top: 5%;
+  margin-left: -10px;
+  background-color: rgb(235, 242, 235);
+  padding: 10px;
+  border-radius: 10px;
+  min-height: auto;
+  outline: none;
+  position: relative;
+}
+
+.ql-container.ql-snow,
+.ql-toolbar.ql-snow {
+  border: none !important;
+}
+
+.ql-container.ql-snow {
+  font-size: 20px;
+  font-family: system-ui;
+}
+
+.picture-icon {
+  color: #0073b1;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.preview-image {
+  width: 100%;
+  margin-top: -20px;
+  height: auto;
+}
+
+.posts-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.msg-container{
+  display: flex;
+  flex-direction: row;
+
+  img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #b7b7b7;
+  }
+
+  p{
+    margin-left: 10px;
+    margin-top: -2px;
+    font-size: 16px;
+    color: #0073b1;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.div-cont .dots{
+  position: absolute; 
+  font-weight: 900;
+  cursor: pointer;
+  padding-bottom: 10px;
+  right: 10px;
+  bottom: 18px;
+}
+
+.div-cont .btn{
+  min-width: 50px;
+  margin-right: 20px;
+}
+.div-cont .press{
+  margin-right: 20px;
+  color: gray;
+}

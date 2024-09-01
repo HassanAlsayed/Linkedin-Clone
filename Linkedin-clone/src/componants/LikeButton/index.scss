@@ -1,0 +1,139 @@
+.like-container {
+  display: flex;
+  padding: 7px 10px;
+  cursor: pointer;
+  position: relative;
+  bottom: 0px;
+  flex-direction: column; 
+  margin-top: -50px;
+
+  p {
+    font-family: system-ui;
+    font-weight: 500;
+    color: rgba(58, 58, 58, 0.835);
+    font-size: 15px;
+    position: relative;
+    top: 0; 
+    left: 0; 
+  }
+
+  .hr-line {
+    margin-top: 0; 
+    hr {
+      border-top: 1px solid rgb(181, 181, 181);
+    }
+  }
+
+  .likes-comment-inner {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; 
+    p {
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      color: rgba(58, 58, 58, 0.835);
+      font-size: 16px;
+    }
+  }
+}
+
+.div-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+
+  span {
+    display: inline-block;
+    margin-top: -5px;
+  }
+
+  small {
+    margin-left: 2px;
+  }
+}
+
+.like {
+  margin-left: 0; 
+}
+
+.like-comment {
+  display: flex; 
+  flex-direction: row;
+  gap: 100px;
+  margin-top: 30px;
+}
+
+.comment {
+  margin-left: 3px; 
+}
+
+.comment-input {
+  height: 35px;
+  width: 90%; 
+  background-color: whitesmoke;
+  padding-left: 10px;
+  border-radius: 30px;
+  border: 1px solid #737373;
+  font-family: system-ui;
+  color: #4b4b4b;
+  font-size: 16px;
+  position: relative; 
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.comment-input:focus {
+  outline: 1px solid #4b4b4b;
+  color: #4b4b4b;
+}
+
+.add-comment-btn {
+  width: 100px;
+  height: 35px;
+  background-color: #0a66c2;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.all-comments {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(227, 227, 227);
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+  padding: 10px; 
+  .name {
+    color: #212121;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .timestamp {
+    font-size: 12px;
+    margin-bottom: -10px;
+    margin-right: -30px;
+  }
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+}
+
+.imageProfileComment {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%;
+  margin-right: 5px; 
+  border: 1px solid #dcdcdc;
+  position: absolute;
+  left: -10px;
+}
