@@ -7,13 +7,9 @@ import { GetPosts } from "../../api/FireStoreAPI";
 import TopBar from "../TopBar";
 import { useLocation, useNavigate } from "react-router-dom";
 import userImage from "../../assets/user.png";
-import SendMessage from "../Modal/SendMessage";
 
 export default function ConnectedProfile() {
   const [allPosts, setAllPosts] = useState([]);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [status, setStatus] = useState("");
-
   const location = useLocation();
   const user = location.state;
 
@@ -62,13 +58,6 @@ export default function ConnectedProfile() {
         </span>
         <button onClick={() => setIsModalOpen(true)}>Message</button>
       </div>
-      <SendMessage
-        setIsModalOpen={setIsModalOpen}
-        isModalOpen={isModalOpen}
-        status={status}
-        setStatus={setStatus}
-        user={user}
-      />
       <div className="profile-status-main">
         {allPosts
           .filter((post) => post && post.userEmail === user?.email)
