@@ -5,7 +5,6 @@ import Home from "../pages/Home";
 import Profile from "../pages/Profile";
 import Connections from "../pages/Connections";
 import ConnectedProfile from "../componants/Profile/ConnectedProfile";
-import { Messaging } from "../componants/Messaging/Messaging";
 
 export const router = createBrowserRouter([
 
