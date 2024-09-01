@@ -14,7 +14,6 @@ import {
   deleteDoc,
   getDocs,
 } from "firebase/firestore";
-import HubConfiguration from "../HubConfiguration";
 
 let postRef = collection(firestore, "Posts");
 let userRef = collection(firestore, "Users");
@@ -190,4 +189,3 @@ export const GetConnections = (setConnections) => {
     );
   });
 };
-

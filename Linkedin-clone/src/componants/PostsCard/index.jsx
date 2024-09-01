@@ -6,7 +6,7 @@ import "./index.scss";
 import LikeButton from "../LikeButton";
 import { useApp } from "../../heplers/Context/useAppContext";
 import { DeletePost, EditPost, GetUserById } from "../../api/FireStoreAPI";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { BsPencil, BsTrash } from "react-icons/bs";
 import UpdatePost from "../Modal/updatePost";
 import userImage from "../../assets/user.png";
